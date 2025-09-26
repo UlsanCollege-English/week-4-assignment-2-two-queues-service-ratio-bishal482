@@ -44,7 +44,7 @@ def test_edge_pattern_wrap_with_sparse_lines():
 def test_long_mixed_arrivals_and_service():
     g = Gate()
     # Seed queues
-    for i in range(1, 6):
+    for i in range(1, 7):
         g.arrive("regular", f"r{i}")
     g.arrive("fastpass", "f1"); g.arrive("fastpass", "f2")
     served = []
